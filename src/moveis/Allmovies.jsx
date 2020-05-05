@@ -3,13 +3,7 @@ import { Container, Row, Col, Form } from 'react-bootstrap'
 import MoveiCard from './MoveiCard'
 import axios from "axios"
 import Circle from 'react-animation-h3ro-yasir'
-function solve(object, array) {
-    let fee = array
-    for (const key in object) {
-        if (object[key] != "All") fee = fee.filter(el => el[key] == object[key] || Number(object[key].split('-')[0]) < el[key] & Number(object[key].split('-')[1]) > el[key])
-    }
-    return fee
-}
+
 export default class Allmovies extends Component {
 
     state = {
